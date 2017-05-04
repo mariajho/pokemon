@@ -22,7 +22,7 @@ function Pokemon(nombre, color, nivelDeAmistad, vida, poderDeAtaque){
 
 
     var pikachu = new Pokemon('pikachu', 'amarillo', 30, 100, 50)
-    var charmander = new Pokemon('charmander', 'rojo', 10, 20, 40)
+    var charmander = new Pokemon('charmander', 'rojo', 10, 20, 45)
 
     pikachu.atacar(charmander)
 
