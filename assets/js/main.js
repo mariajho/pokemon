@@ -1,4 +1,4 @@
-function Pokemon(nombre, color, nivelDeAmistad, vida, poderDeAtaque){
+function Pokemon(nombre, color, nivelDeAmistad, vida, poderDeAtaque, pelear){
 	this.nombre = nombre;
 	this.color = color;
 
@@ -6,6 +6,7 @@ function Pokemon(nombre, color, nivelDeAmistad, vida, poderDeAtaque){
 
 	this.vida = vida;
 	this.poderDeAtaque = poderDeAtaque;
+	this.pelear = pelear;
 
 	this.mostrarPokemon = function(){
 		return('Hola, soy: ' + this.nombre + ' soy de color: ' + this.color)
@@ -21,8 +22,8 @@ function Pokemon(nombre, color, nivelDeAmistad, vida, poderDeAtaque){
 }
 
 
-    var pikachu = new Pokemon('pikachu', 'amarillo', 30, 100, 50)
-    var charmander = new Pokemon('charmander', 'rojo', 10, 20, 40)
+    var pikachu = new Pokemon('pikachu', 'amarillo', 30, 100, 50, 20)
+    var charmander = new Pokemon('charmander', 'rojo', 10, 20, 40, 30)
 
     pikachu.atacar(charmander)
 
